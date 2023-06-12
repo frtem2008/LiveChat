@@ -1,8 +1,9 @@
+package Online;
+
 import java.io.Closeable;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.lang.reflect.InvocationTargetException;
 import java.net.*;
 import java.util.Objects;
 
@@ -54,10 +55,9 @@ public class Connection implements Closeable {
     }
 
 
-
     @Override
     public String toString() {
-        return "Online.Connection{" + "ip=" + getIp() + '}';
+        return "Online.Online.Connection{" + "ip=" + getIp() + '}';
     }
 
 
@@ -71,6 +71,48 @@ public class Connection implements Closeable {
                 socket.close();
             }
         }
+    }
+
+    public void writeLine(String msg) throws IOException {
+        if (!closed) {
+            writer.writeUTF(msg);
+            writer.flush();
+        } else
+            throw new SocketException("Write failed: connection closed");
+    }
+
+    public void writeLong(Long l) throws IOException {
+        if (!closed) {
+            writer.writeLong(l);
+            writer.flush();
+        } else
+            throw new SocketException("Write failed: connection closed");
+    }
+
+    public void writeBytes(byte[] bytes, int offset, int len) throws IOException {
+        if (!closed) {
+            writer.write(bytes, offset, len);
+            writer.flush();
+        } else
+            throw new SocketException("Write failed: connection closed");
+    }
+
+    public String readLine() throws IOException {
+        if (!closed)
+            return reader.readUTF();
+        throw new SocketException("Read failed: connection closed");
+    }
+
+    public Long readLong() throws IOException {
+        if (!closed)
+            return reader.readLong();
+        throw new SocketException("Read failed: connection closed");
+    }
+
+    public int readBytes(byte[] buf, int offset, int len) throws IOException {
+        if (!closed)
+            return reader.read(buf, offset, len);
+        throw new SocketException("Read failed: connection closed");
     }
 
 

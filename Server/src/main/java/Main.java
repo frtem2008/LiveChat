@@ -1,5 +1,3 @@
-package Server;
-
 import Online.Server;
 import java.io.IOException;
 import java.text.SimpleDateFormat;

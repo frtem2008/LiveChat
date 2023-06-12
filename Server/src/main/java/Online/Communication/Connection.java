@@ -5,8 +5,9 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.*;
-import java.util.Objects;
+import lombok.EqualsAndHashCode;
 
+@EqualsAndHashCode
 public class Connection implements Closeable {
     private final Socket socket;
     private final ObjectInputStream reader;
@@ -113,18 +114,5 @@ public class Connection implements Closeable {
         if (!closed)
             return reader.read(buf, offset, len);
         throw new SocketException("Read failed: connection closed");
-    }
-
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(socket, reader, writer, closed);
-    }
-
-    public boolean equals(Object x) {
-        if (x == null || x.getClass() != this.getClass()) return false;
-        if (x == this) return true;
-        Connection cur = (Connection) x;
-        return cur.socket == this.socket && cur.getIp().equals(this.getIp());
     }
 }
