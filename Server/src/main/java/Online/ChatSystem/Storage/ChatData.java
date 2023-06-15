@@ -4,24 +4,22 @@ import Online.ClientSystem.Client;
 import Online.ClientSystem.Storage.ClientData;
 import java.util.HashSet;
 import java.util.Set;
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.ToString;
+import lombok.*;
+import lombok.extern.jackson.Jacksonized;
 
 @Getter
+@NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode
 @ToString
+@Jacksonized
 public class ChatData {
-    private final String id;
-    private final Set<Client> members;
+    private String id;
+    private Set<ClientData> members;
 
-    public static ChatData of(String id, Set<ClientData> data) {
-        HashSet<Client> members = new HashSet<>();
-        for (ClientData client : data) {
-            members.add(new Client(client, null));
-        }
-        return new ChatData(id, members);
+    public static ChatData of(String id, Set<Client> data) {
+        ChatData chatData = new ChatData(id, new HashSet<>());
+        data.forEach(client -> chatData.members.add(new ClientData(client)));
+        return chatData;
     }
 }

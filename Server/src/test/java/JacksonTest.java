@@ -17,9 +17,13 @@ public class JacksonTest {
         ClientData recreated = mapper.readValue(Files.readAllBytes(Path.of("Server/src/test/java/test.json")), ClientData.class);
         System.out.println(recreated);
         HashSet<ClientData> members = new HashSet<>();
-        members.add(new Client("livefish", "alicetop", "some id", null).getData());
-        members.add(new Client("unnownfox", "misha)", "another id", null).getData());
-        ChatData data = ChatData.of(UUID.randomUUID().toString(), members);
-        System.out.println(mapper.writeValueAsString(data));
+        members.add(new ClientData(new Client("livefish", "alicetop", "some id", null)));
+        members.add(new ClientData(new Client("unnownfox", "misha)", "another id", null)));
+        ChatData data = new ChatData(UUID.randomUUID().toString(), members);
+        String coded = mapper.writeValueAsString(data);
+        System.out.println(coded);
+        ChatData restored = mapper.readValue(coded, ChatData.class);
+        System.out.println("Restored:\n" + restored);
+        // TODO: 15.06.2023 Save all client, chat, account info as JSON
     }
 }

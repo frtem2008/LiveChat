@@ -80,7 +80,7 @@ public class ClientHandler {
         while (true);
 
         log.info("Client: " + client.getUsername() + " connected");
-        accountService.writeClientData(client.getData());
+        accountService.writeClientData(client);
         accountService.addClient(client);
     }
 

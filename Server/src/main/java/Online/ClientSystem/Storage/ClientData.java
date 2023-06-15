@@ -1,5 +1,6 @@
 package Online.ClientSystem.Storage;
 
+import Online.ClientSystem.Client;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonSetter;
 import lombok.*;
@@ -21,6 +22,12 @@ public class ClientData {
     @JsonSetter("UUID")
     public void setUUID(String UUID) {
         this.UUID = UUID;
+    }
+
+    public ClientData(Client client) {
+        this.username = client.getUsername();
+        this.password = client.getPassword();
+        this.UUID = client.getId();
     }
 
     public ClientData(String clientDataStr) {

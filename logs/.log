@@ -1,0 +1,39 @@
+2023-06-15 18:30:21 INFO  AccountService - Created file for client data storage: Server\src\test\java\AccountServerTest\test.json
+2023-06-15 18:30:22 ERROR AccountService - Failed to read all client data from client data storage: No content to map due to end-of-input
+ at [Source: (File); line: 1, column: 0]
+2023-06-15 18:34:47 ERROR AccountService - Failed to read all client data from client data storage: No content to map due to end-of-input
+ at [Source: (File); line: 1, column: 0]
+2023-06-15 18:35:12 ERROR AccountService - Failed to read all client data from client data storage: No content to map due to end-of-input
+ at [Source: (File); line: 1, column: 0]
+2023-06-15 18:35:42 ERROR AccountService - Failed to read all client data from client data storage: No content to map due to end-of-input
+ at [Source: (File); line: 1, column: 0]
+2023-06-15 18:37:35 ERROR AccountService - Failed to read all client data from client data storage: No content to map due to end-of-input
+ at [Source: (File); line: 1, column: 0]
+2023-06-15 18:37:35 WARN  AccountService - No client data or client data file not available: java.lang.RuntimeException: Failed to read all client data from client data storage: No content to map due to end-of-input
+ at [Source: (File); line: 1, column: 0]
+2023-06-15 18:37:35 INFO  AccountService - Account service started, read 0 client accounts
+2023-06-15 18:37:35 ERROR AccountService - Failed to write client data for: Client(username=unnownfox, password=misha), id=another id, connection=null) Error:com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input
+ at [Source: (File); line: 1, column: 0]
+2023-06-15 18:41:32 ERROR AccountService - Failed to read all client data from client data storage: No content to map due to end-of-input
+ at [Source: (File); line: 1, column: 0]
+2023-06-15 18:41:32 WARN  AccountService - No client data or client data file not available: java.lang.RuntimeException: Failed to read all client data from client data storage: No content to map due to end-of-input
+ at [Source: (File); line: 1, column: 0]
+2023-06-15 18:41:32 INFO  AccountService - Account service started, read 0 client accounts
+2023-06-15 18:42:03 ERROR AccountService - Failed to write client data for: Client(username=unnownfox, password=misha), id=another id, connection=null) Error:com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input
+ at [Source: (File); line: 1, column: 0]
+2023-06-15 18:46:09 INFO  AccountService - Account service started, read 0 client accounts
+2023-06-15 18:46:09 ERROR AccountService - Failed to write client data for: Client(username=unnownfox, password=misha), id=another id, connection=null) Error:com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input
+ at [Source: (File); line: 1, column: 0]
+2023-06-15 18:47:39 INFO  AccountService - Account service started, read 0 client accounts
+2023-06-15 18:47:40 DEBUG AccountService - Wrote client data: unnownfox to client data file
+2023-06-15 18:47:40 ERROR AccountService - Failed to write client data for: Client(username=livefish, password=alicetop, id=some id, connection=null) Error:com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `Online.ClientSystem.Storage.AllClientData` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (File); line: 2, column: 3]
+2023-06-15 18:48:04 INFO  AccountService - Account service started, read 0 client accounts
+2023-06-15 18:48:04 DEBUG AccountService - Wrote client data: unnownfox to client data file
+2023-06-15 18:48:04 DEBUG AccountService - Wrote client data: livefish to client data file
+2023-06-15 18:48:48 INFO  AccountService - Account service started, read 2 client accounts
+2023-06-15 18:48:48 DEBUG AccountService - Wrote client data: unnownfox to client data file
+2023-06-15 18:48:48 DEBUG AccountService - Wrote client data: livefish to client data file
+2023-06-15 18:50:57 INFO  AccountService - Account service started, read 2 client accounts
+2023-06-15 18:50:57 DEBUG AccountService - Wrote client data: unnownfox to client data file
+2023-06-15 18:50:57 DEBUG AccountService - Wrote client data: livefish to client data file
