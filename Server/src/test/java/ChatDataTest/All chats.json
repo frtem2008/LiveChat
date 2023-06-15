@@ -1,0 +1,16 @@
+{
+  "data" : {
+    "31c12f6e-6ee3-477b-b810-ba781d537922" : {
+      "id" : "31c12f6e-6ee3-477b-b810-ba781d537922",
+      "members" : [ {
+        "username" : "unnownfox",
+        "password" : "misha)",
+        "UUID" : "another id"
+      }, {
+        "username" : "livefish",
+        "password" : "alicetop",
+        "UUID" : "some id"
+      } ]
+    }
+  }
+}

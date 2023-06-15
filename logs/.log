@@ -37,3 +37,20 @@
 2023-06-15 18:50:57 INFO  AccountService - Account service started, read 2 client accounts
 2023-06-15 18:50:57 DEBUG AccountService - Wrote client data: unnownfox to client data file
 2023-06-15 18:50:57 DEBUG AccountService - Wrote client data: livefish to client data file
+2023-06-15 19:03:59 INFO  ChatService - Chat service started, read 0 chats
+2023-06-15 19:18:21 INFO  ChatService - Created file for chat data storage: Server\src\test\java\ChatDataTest\All chats.json
+2023-06-15 19:18:21 INFO  ChatService - Chat service started, read 0 chats
+2023-06-15 19:20:14 INFO  ChatService - Chat service started, read 0 chats
+2023-06-15 19:20:14 DEBUG ChatService - Wrote chat data: 764766cb-831e-4db7-adac-1528206c096f to chat data file
+2023-06-15 19:20:14 DEBUG ChatService - Wrote chat data: 764766cb-831e-4db7-adac-1528206c096f to chat data file
+2023-06-15 19:21:26 INFO  ChatService - Chat service started, read 1 chats
+2023-06-15 19:21:26 DEBUG ChatService - Wrote chat data: a6dd83a0-7962-4dde-9961-e22fc8eae5e3 to chat data file
+2023-06-15 19:21:26 DEBUG ChatService - Wrote chat data: a6dd83a0-7962-4dde-9961-e22fc8eae5e3 to chat data file
+2023-06-15 19:21:48 INFO  ChatService - Chat service started, read 2 chats
+2023-06-15 19:21:48 DEBUG ChatService - Wrote chat data: 25b57b41-14e0-41d8-93dc-b140dd9cfb0d to chat data file
+2023-06-15 19:21:48 DEBUG ChatService - Wrote chat data: 25b57b41-14e0-41d8-93dc-b140dd9cfb0d to chat data file
+2023-06-15 19:21:48 DEBUG ChatService - Wrote chat data: 25b57b41-14e0-41d8-93dc-b140dd9cfb0d to chat data file
+2023-06-15 19:22:17 INFO  ChatService - Chat service started, read 0 chats
+2023-06-15 19:22:17 DEBUG ChatService - Wrote chat data: 31c12f6e-6ee3-477b-b810-ba781d537922 to chat data file
+2023-06-15 19:22:17 DEBUG ChatService - Wrote chat data: 31c12f6e-6ee3-477b-b810-ba781d537922 to chat data file
+2023-06-15 19:22:17 DEBUG ChatService - Wrote chat data: 31c12f6e-6ee3-477b-b810-ba781d537922 to chat data file

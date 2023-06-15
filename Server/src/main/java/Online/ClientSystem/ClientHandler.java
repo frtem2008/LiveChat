@@ -96,7 +96,6 @@ public class ClientHandler {
                 case "SEND" -> {
                     int chatId = Integer.parseInt(split[1]);
                     String message = split[2];
-
                 }
                 default -> {
                     log.warn("Unexpected command from: " + client.getUsername() + " command: " + command);

@@ -1,3 +1,5 @@
+package AccountServerTest;
+
 import Online.ChatSystem.Storage.ChatData;
 import Online.ClientSystem.Client;
 import Online.ClientSystem.Storage.AccountService;

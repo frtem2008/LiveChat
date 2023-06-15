@@ -1,0 +1,14 @@
+{
+  "data" : {
+    "unnownfox" : {
+      "username" : "unnownfox",
+      "password" : "misha)",
+      "UUID" : "another id"
+    },
+    "livefish" : {
+      "username" : "livefish",
+      "password" : "alicetop",
+      "UUID" : "some id"
+    }
+  }
+}
